@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct EffectiveMobileTestApp: App {
+    
+    @StateObject var authViewModel: AuthViewModel = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
