@@ -22,6 +22,15 @@ final class MenuViewModel: ObservableObject {
     @Published var offers: [Offer] = []
     @Published var vacancies: [Vacancy] = []
     
+    var filteredJobs: [Vacancy] {
+        guard !searcVacancyText.isEmpty else { return vacancies}
+
+        return vacancies.filter { job in
+            job.company.lowercased().contains(searcVacancyText.lowercased()) ||
+            ((job.description?.lowercased().contains(searcVacancyText.lowercased())) != nil)
+        }
+    }
+    
 //    init() {
 //        self.fetchData()
 //    }

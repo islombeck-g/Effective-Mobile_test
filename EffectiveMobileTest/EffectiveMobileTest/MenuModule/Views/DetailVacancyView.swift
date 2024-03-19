@@ -3,6 +3,7 @@ import MapKit
 
 struct DetailVacancyView: View {
     
+    @EnvironmentObject var viewModel: MenuViewModel
     let vacancy: Vacancy
     
     var body: some View {
@@ -10,7 +11,9 @@ struct DetailVacancyView: View {
             HStack {
                 
                 Group {
-                    Button {} label: {
+                    Button {
+                        self.viewModel.navigateBack()
+                    } label: {
                         Image(systemName: "arrow.left")
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -96,6 +99,7 @@ struct DetailVacancyView: View {
                 
             }
             
+            .navigationBarBackButtonHidden(true)
             .preferredColorScheme(.dark)
         }
     }

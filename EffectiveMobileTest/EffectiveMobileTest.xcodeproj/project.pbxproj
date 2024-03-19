@@ -23,7 +23,6 @@
 		63DA0B1F2BA5C6F000CFBCB6 /* EffectiveMobileTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0B1E2BA5C6F000CFBCB6 /* EffectiveMobileTestApp.swift */; };
 		63DA0B232BA5C6F200CFBCB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DA0B222BA5C6F200CFBCB6 /* Assets.xcassets */; };
 		63DA0B262BA5C6F200CFBCB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DA0B252BA5C6F200CFBCB6 /* Preview Assets.xcassets */; };
-		63DA0B2D2BA5CB4A00CFBCB6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0B2C2BA5CB4A00CFBCB6 /* AppCoordinator.swift */; };
 		63DA0B352BA5D03800CFBCB6 /* MenuMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0B342BA5D03800CFBCB6 /* MenuMainScreen.swift */; };
 		63DA0B372BA5D04B00CFBCB6 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0B362BA5D04B00CFBCB6 /* MenuModel.swift */; };
 		63DA0B392BA5D05900CFBCB6 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA0B382BA5D05900CFBCB6 /* MenuViewModel.swift */; };
@@ -55,7 +54,6 @@
 		63DA0B1E2BA5C6F000CFBCB6 /* EffectiveMobileTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveMobileTestApp.swift; sourceTree = "<group>"; };
 		63DA0B222BA5C6F200CFBCB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DA0B252BA5C6F200CFBCB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		63DA0B2C2BA5CB4A00CFBCB6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		63DA0B342BA5D03800CFBCB6 /* MenuMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMainScreen.swift; sourceTree = "<group>"; };
 		63DA0B362BA5D04B00CFBCB6 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		63DA0B382BA5D05900CFBCB6 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 		63941FBA2BA831D6001F78E0 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				63DA0B2C2BA5CB4A00CFBCB6 /* AppCoordinator.swift */,
 				63941FB82BA83015001F78E0 /* CustomTabBar.swift */,
 				63941FBB2BA83216001F78E0 /* CustomTabBarIcon.swift */,
 			);
@@ -287,7 +284,6 @@
 				63062D8D2BA97A5200E22F75 /* DetailVacancyView.swift in Sources */,
 				63062D952BAA059400E22F75 /* ViewsCounter.swift in Sources */,
 				63DA0B412BA5D0E900CFBCB6 /* ProfileMainScreen.swift in Sources */,
-				63DA0B2D2BA5CB4A00CFBCB6 /* AppCoordinator.swift in Sources */,
 				63941FB72BA82AE0001F78E0 /* CoordinatorView.swift in Sources */,
 				63941FB92BA83015001F78E0 /* CustomTabBar.swift in Sources */,
 				63941FC32BA8593E001F78E0 /* CustomTextField.swift in Sources */,

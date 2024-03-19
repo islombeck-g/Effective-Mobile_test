@@ -22,23 +22,24 @@ struct MenuMainScreen: View {
                 
             
             ScrollView(.vertical) {
-                
-                ScrollView(.horizontal) {
-                    
-                    LazyHStack {
+                if self.viewModel.searcVacancyText == "" {
+                    ScrollView(.horizontal) {
                         
-                        ForEach(self.viewModel.menuItems) { item in
+                        LazyHStack {
                             
-                            Button {
-                                item.action()
-                            } label: {
-                                FastFilterForm(icon: item.imageName, iconColor: item.color, text: item.title)
+                            ForEach(self.viewModel.menuItems) { item in
+                                
+                                Button {
+                                    item.action()
+                                } label: {
+                                    FastFilterForm(icon: item.imageName, iconColor: item.color, text: item.title)
+                                }
                             }
                         }
+                        .padding(.horizontal)
                     }
-                    .padding(.horizontal)
+                    .scrollIndicators(.hidden)
                 }
-                .scrollIndicators(.hidden)
                     
                 Text("Вакансии для вас")
                     .font(.system(size: 20))
@@ -46,7 +47,7 @@ struct MenuMainScreen: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 16)
                 
-                ForEach(self.viewModel.vacancies) { vacancy in
+                ForEach(self.viewModel.filteredJobs) { vacancy in
                     Button {
                         self.viewModel.navigateTo(.detail(vacancy: vacancy))
                     } label: {
@@ -55,8 +56,7 @@ struct MenuMainScreen: View {
                     .padding(.horizontal)
                 }
             }
-            .padding(.top, 33)
-            
+            .padding(.top, 33)   
         }
         .preferredColorScheme(.dark)
     }
