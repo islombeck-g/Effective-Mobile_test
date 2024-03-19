@@ -1,20 +1,15 @@
-//
-//  EffectiveMobileTestApp.swift
-//  EffectiveMobileTest
-//
-//  Created by Islombek Gofurov on 16/03/24.
-//
-
 import SwiftUI
 
 @main
 struct EffectiveMobileTestApp: App {
     
-    @StateObject var authViewModel: AuthViewModel = AuthViewModel()
+    @StateObject var userManager: UserManager = UserManager.shared
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorView()
+                .preferredColorScheme(.dark)
+                .environmentObject(userManager)
         }
     }
 }
